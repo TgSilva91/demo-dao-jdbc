@@ -35,6 +35,11 @@ public class Program2 {
 			System.out.println(d);
 		}
 		
+		System.out.println();
+		System.out.println("==== Test 4: department update ====");
+		dep = departmentDao.findById(6);
+		dep.setName("Music");
+		departmentDao.update(dep);
 		
 		sc.close();
 	}
